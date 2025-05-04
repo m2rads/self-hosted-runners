@@ -3,8 +3,7 @@ on: [push]
 jobs:
   Hello-World-Job:
     runs-on:
-      - codebuild-limetest-${{ github.run_id }}-${{ github.run_attempt }}
-      - image:ubuntu-standard:6.0
+      - codebuild-limetestest-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
