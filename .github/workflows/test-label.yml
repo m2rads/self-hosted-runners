@@ -1,4 +1,4 @@
-name: Hello World
+name: Test Label
 on: [push]
 jobs:
   Hello-World-Job:
