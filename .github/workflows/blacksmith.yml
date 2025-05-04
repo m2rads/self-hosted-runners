@@ -3,9 +3,10 @@ on: [push]
 jobs:
   Hello-World-Job:
     runs-on:
-      - blacksmith-4vcpu-ubuntu-2204
+      - ubuntu-latest
     steps:
-      - uses: useblacksmith/setup-node@v5
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: '18'
       
@@ -14,6 +15,9 @@ jobs:
       
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
+
+      - name: Fix chalk compatibility
+        run: npm install chalk@4.1.2 --save-exact
       
       - name: Install @limetest/limetest
         run: npm install @limetest/limetest
