@@ -1,4 +1,4 @@
-name: Hello World
+name: Github
 on: [push]
 jobs:
   Hello-World-Job:

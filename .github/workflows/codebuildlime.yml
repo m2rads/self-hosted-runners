@@ -1,9 +1,9 @@
-name: Hello World
+name: Codebuild
 on: [push]
 jobs:
   Hello-World-Job:
     runs-on:
-      - codebuild-limetestest-${{ github.run_id }}-${{ github.run_attempt }}
+      - codebuild-codebuildack-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
