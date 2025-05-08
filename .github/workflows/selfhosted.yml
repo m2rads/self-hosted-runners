@@ -3,7 +3,7 @@ on: [push]
 jobs:
   self-hosted-test-Job:
     runs-on:
-      - self-hosted
+      - my-runners
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
