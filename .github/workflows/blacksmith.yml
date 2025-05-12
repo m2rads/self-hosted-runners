@@ -3,7 +3,7 @@ on: [push]
 jobs:
   Hello-World-Job:
     runs-on:
-      - blacksmith-4vcpu-ubuntu-2204
+      - my-runner
     steps:
       - uses: actions/checkout@v3
       - uses: useblacksmith/setup-node@v5
