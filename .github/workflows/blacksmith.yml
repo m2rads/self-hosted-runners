@@ -1,12 +1,12 @@
-name: Test Label
+name: Blacksmith
 on: [push]
 jobs:
-  self-hosted-test-Job:
+  Hello-World-Job:
     runs-on:
-      - my-runners
+      - blacksmith-4vcpu-ubuntu-2204
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: useblacksmith/setup-node@v5
         with:
           node-version: '18'
       
