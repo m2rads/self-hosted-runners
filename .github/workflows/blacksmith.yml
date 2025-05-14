@@ -1,12 +1,13 @@
-name: Blacksmith
+
+name: Limetest
 on: [push]
 jobs:
-  Blacksmith-Runner:
+  test-cli:
     runs-on:
       - blacksmith-4vcpu-ubuntu-2204
     steps:
       - uses: actions/checkout@v3
-      - uses: useblacksmith/setup-node@v5
+      - uses: actions/setup-node@v3
         with:
           node-version: '18'
       
