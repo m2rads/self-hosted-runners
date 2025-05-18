@@ -22,4 +22,4 @@ jobs:
       - name: Run Limetest
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: npx limetest
+        run: npx limetest --headless
