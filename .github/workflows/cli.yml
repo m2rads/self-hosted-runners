@@ -3,7 +3,7 @@ name: Limetest
 on: [push]
 jobs:
   test-cli:
-    runs-on: limetest-2vcpu-ubuntu-2505
+    runs-on: test-runner-one
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
